@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Get Location
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button color="danger" (click)="getRoute()" > Get Route By Location </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <input id="pac-input" class="form-control" type="text" placeholder="Enter a location">
+      <div id="map"></div>
+      <div id="infowindow-content">
+        <span id="place-name"  class="title"></span><br>Place ID <span id="place-id"></span><br>
+        <span id="place-address"></span>
+      </div>
+</ion-content>
